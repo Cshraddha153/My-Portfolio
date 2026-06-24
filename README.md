@@ -43,8 +43,7 @@ npm install
 npm run dev
 ```
 
-- Frontend: http://localhost:5173
-- API: http://localhost:5000
+**Website Link:-** https://my-portfolio-client-five.vercel.app
 
 
 

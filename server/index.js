@@ -18,24 +18,17 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const CORS_ORIGIN = process.env.CORS_ORIGIN;
 
-// --- Email transport --------------------------------------------------------
+// --- Email (Resend HTTPS API) --------------------------------------------------------
 // The address that receives contact-form submissions.
 const MAIL_TO = process.env.MAIL_TO || 'shraddha76830@gmail.com';
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
-// A transporter is only created when SMTP credentials are provided via env vars.
-// Without them, submissions are still saved to disk (see /api/contact).
-let transporter = null;
-if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
-  transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT) || 587,
-    secure: String(process.env.SMTP_SECURE) === 'true',
-    auth: { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS },
-  });
-  console.log(`Email delivery enabled — messages will be sent to ${MAIL_TO}`);
+if (RESEND_API_KEY) {
+  console.log(`Email delivery enabled (Resend) — messages will be sent to ${MAIL_TO}`);
 } else {
-  console.log('Email delivery disabled (no SMTP env vars). Submissions are saved to data/contacts.json only.');
+  console.log('Email delivery disabled (no RESEND_API_KEY). Submissions are saved to data/contacts.json only.');
 }
+
 
 // --- Middleware -------------------------------------------------------------
 app.use(
@@ -119,22 +112,32 @@ app.post('/api/contact', async (req, res) => {
     return res.status(500).json({ error: 'Unable to save your message. Please try again later.' });
   }
 
-  // Send the submission by email if SMTP is configured.
-  if (transporter) {
+  // Send the submission by email via Resend if configured.
+  if (RESEND_API_KEY) {
     try {
-      await transporter.sendMail({
-        from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
-        to: MAIL_TO,
-        replyTo: email,
-        subject: `New portfolio message from ${name}`,
-        text: `You received a new message from your portfolio contact form.\n\nName: ${name}\nEmail: ${email}\nSent: ${entry.submittedAt}\n\nMessage:\n${message}`,
+      const resp = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${RESEND_API_KEY}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from: 'Portfolio Contact <onboarding@resend.dev>',
+          to: [MAIL_TO],
+          reply_to: email,
+          subject: `New portfolio message from ${name}`,
+          text: `You received a new message from your portfolio contact form.\n\nName: ${name}\nEmail: ${email}\nSent: ${entry.submittedAt}\n\nMessage:\n${message}`,
+        }),
       });
+      if (!resp.ok) {
+        const detail = await resp.text();
+        console.error('Email send failed:', resp.status, detail);
+      }
     } catch (err) {
       console.error('Email send failed:', err.message);
-      // The message is already saved, so report success but log the failure.
+      // The message is already saved,, so report succcess but log the failure.
     }
   }
-
   res.status(201).json({ ok: true, message: 'Thank you! Your message has been received.' });
 });
 

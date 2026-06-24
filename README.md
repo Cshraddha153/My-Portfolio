@@ -1,6 +1,6 @@
 # My Portfolio
 
-A full-stack, responsive single-employee portfolio website. It introduces one employee with a single profile photo, then presents a curated compilation of academic and professional materials that exemplify their **beliefs, skills, qualifications, education, training, and experiences**.
+Welcome to my portfolio! I am Shraddha Chauhan, an AI/ML enthusiast and Software Engineer with experience in Generative AI, Agentic AI, Full-Stack Development, and Automation Engineering. This portfolio showcases my projects, research publications, technical skills, and professional experience, including work on LLMs, RAG systems, Vision Transformers, and scalable web applications. Explore my journey, achievements, and the innovative solutions I have built to solve real-world problems.
 
 
 ## Tech stack
@@ -46,20 +46,5 @@ npm run dev
 - Frontend: http://localhost:5173
 - API: http://localhost:5000
 
-The Vite dev server proxies `/api/*` requests to the Express server, so no extra configuration is needed.
 
-### 3. Production build
-
-```powershell
-npm run build       # builds the frontend into client/dist
-npm start           # serves the API (set PORT to change the port)
-```
-
-## API endpoints
-
-| Method | Endpoint         | Description                                  |
-| ------ | ---------------- | -------------------------------------------- |
-| GET    | `/api/profile`   | Returns the my profile            |
-| GET    | `/api/portfolio` | Returns the portfolio materials list         |
-| POST   | `/api/contact`   | Validates and stores a contact submission    |
 

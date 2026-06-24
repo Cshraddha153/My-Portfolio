@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Employee photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B5CD5" />
+      <stop offset="1" stop-color="#1C2B39" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" />
+  <circle cx="200" cy="160" r="72" fill="#E8EEF5" />
+  <path d="M78 362c0-67 55-106 122-106s122 39 122 106z" fill="#E8EEF5" />
+</svg>

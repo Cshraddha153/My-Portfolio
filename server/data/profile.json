@@ -1,0 +1,221 @@
+{
+  "name": "Shraddha Chauhan",
+  "title": "SDE Intern @ Motorola Solutions || MNNIT-Allahabad'26 || B.Tech in Electronics and Communication Engineering",
+  "tagline": "SDE Intern on the Automation Team, building reliable, self-healing test automation and quality tooling.",
+  "photoUrl": "/Shraddha_photo.jpg",
+  "location": "Bengaluru, Karnataka",
+  "email": "shraddha76830@gmail.com",
+  "resumeUrl": "",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/cshraddha15",
+    "github": "https://github.com/Cshraddha153",
+    "email": "mailto:shraddha76830@gmail.com",
+    "scholar": "https://scholar.google.com/citations?user=8igInQ4AAAAJ",
+    "leetcode": "https://leetcode.com/u/Shhraddha153/"
+  },
+  "beliefs": "I believe great software is built with curiosity, persistence, and care for the people who use it. I value clean problem-solving, continuous learning, and **engineering robust applications that deliver seamless user experiences**. I enjoy turning complex challenges into simple, dependable solutions—**whether designing scalable backend architectures or integrating intelligent AI models**—and I am always eager to learn, collaborate, and grow as a developer.",
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["Python", "C++", "Java", "JavaScript", "TypeScript", "SQL"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["HTML", "CSS", "Tailwind CSS"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Express.js", "REST APIs"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MongoDB", "MySQL"]
+    },
+    {
+      "category": "Vector Databases",
+      "items": ["FAISS", "ChromaDB"]
+    },
+    {
+      "category": "AI / ML",
+      "items": [
+        "Pandas",
+        "NumPy",
+        "RAG",
+        "LLM",
+        "GenAI",
+        "TensorFlow",
+        "PyTorch",
+        "Hugging Face",
+        "LangChain",
+        "LangGraph",
+        "CrewAI",
+        "Vision Transformer",
+        "BERT",
+        "NLP",
+        "Image Processing",
+        "Multi-modal Data Processing",
+        "Data Processing",
+        "Data Augmentation",
+        "Data Cleaning",
+        "AI Agents"
+      ]
+    },
+    {
+      "category": "Tools & Frameworks",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitHub Copilot",
+        "Postman",
+        "Playwright",
+        "Selenium",
+        "OPSCLI",
+        "MobaXterm",
+        "Streamlit",
+        "Stripe",
+        "Clerk",
+        "Cloudinary",
+        "Vercel",
+        "Nodemailer",
+        "Socket.IO",
+        "RabbitMQ",
+        "Redis",
+        "AWS"
+      ]
+    },
+    {
+      "category": "Architecture & DevOps",
+      "items": ["MERN Stack", "Node.js", "Microservices", "Docker", "AWS"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Motilal Nehru National Institute of Technology (MNNIT), Allahabad",
+      "degree": "B.Tech. in Electronics and Communication Engineering",
+      "period": "Nov 2022 — Jun 2026",
+      "score": "CGPA: 7.7",
+      "coursework": "Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), DBMS, Operating Systems, Computer Networks, Artificial Intelligence, Machine Learning, Deep Learning, and Image Processing.",
+      "details": "Undergraduate studies with a strong focus on software development, AI/ML, and problem solving."
+    },
+    {
+      "institution": "Baldev Singh Inter College, Jaspur (Uttarakhand)",
+      "degree": "Higher Secondary Education (Class XII) · CBSE Board",
+      "period": "Completed 2022",
+      "score": "Percentage: 94%"
+    },
+    {
+      "institution": "Sunshine Public School, Thakurdwara (Uttar Pradesh)",
+      "degree": "Secondary Education (Class X) · CBSE Board",
+      "period": "Completed 2020",
+      "score": "Percentage: 94%"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Motorola Solutions, Bengaluru, Karnataka",
+      "role": "SDE Intern @ Motorola Solutions",
+      "period": "Jan 2026 — Present",
+      "summary": "Drove System Integration Testing (SIT) automation by developing resilient test suites with built-in self-healing, mitigating flaky tests and reducing manual engineering effort.",
+      "achievements": [
+        "Architected and led the large-scale migration of 50+ Selenium automation suites (encompassing 3,500+ web and mobile tests) to Playwright, developing core framework components that optimized test execution speed by 80% and slashed development time by 99%.",
+        "Engineered an AI-driven self-healing engine using Python and MSI GenAI LLM to capture real-time DOM snapshots and dynamically recover broken locators. This workflow achieved a 95% automatic healing success rate, drove a 70% reduction in flaky tests, and resulted in 85% faster maintenance with zero manual intervention.",
+        "Orchestrated remote backend testing pipelines leveraging OPSCLI via MobaXterm, executing complex integration test suites across distributed server environments to validate system infrastructure and accelerate debugging cycles."
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Self-Healing Test Automation",
+      "category": "Professional",
+      "description": "Automation framework that detects and recovers from broken UI locators, improving test reliability for system integration testing.",
+      "tag": "Playwright · Automation",
+      "link": ""
+    },
+    {
+      "title": "Competitive Programming",
+      "category": "Academic",
+      "description": "Active problem solver on LeetCode, strengthening data structures, algorithms, and optimization skills.",
+      "tag": "DSA · Problem Solving",
+      "link": "https://leetcode.com/u/Shhraddha153/"
+    },
+    {
+      "title": "Research & Publications",
+      "category": "Academic",
+      "description": "Academic research contributions and publications listed on Google Scholar.",
+      "tag": "Google Scholar",
+      "link": "https://scholar.google.com/citations?user=8igInQ4AAAAJ"
+    },
+    {
+      "title": "Engineering Coursework Projects",
+      "category": "Academic",
+      "description": "Projects in electronics, communication, and software built during B.Tech at MNNIT Allahabad.",
+      "tag": "ECE · Software",
+      "link": ""
+    }
+  ],
+  "projects": [
+    {
+      "category": "Software Engineering Projects",
+      "items": [
+        {
+          "title": "Chat Application using MERN Stack",
+          "description": "Architected a scalable, production-ready real-time chat platform using TypeScript and the MERN stack decoupled into high-availability microservices. Implemented an asynchronous message broker layer using RabbitMQ to handle inter-service communications alongside Socket.io for low-latency, real-time message broadcasting. Engineered high-efficiency performance optimizations by integrating Redis caching layers, implemented an automated OTP-based authentication workflow, and containerized the entire ecosystem with Docker for seamless deployment across AWS infrastructure.",
+          "links": []
+        },
+        {
+          "title": "Full Stack Hotel Booking Web Application",
+          "description": "Architected a modular full-stack web application featuring an online reservation system and a real-time analytics dashboard for property owners to monitor bookings and track revenue. Developed high-concurrency RESTful backend components with race-condition validation logic to completely mitigate duplicate reservations. Established an asynchronous, secure user infrastructure leveraging Clerk-verified JWT routing with decoupled webhook data persistence, and integrated Stripe payment pipelines alongside Brevo transaction notifications.",
+          "links": [
+            { "label": "Website", "url": "https://shraddhahotelbookingsystemfrontend.vercel.app/" },
+            { "label": "Code", "url": "https://github.com/Cshraddha153/Hotel-Booking-WebApp" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "AI/ML Projects",
+      "items": [
+        {
+          "title": "Autonomous Web Application Generator AI Agent Using LangGraph",
+          "description": "Architected a stateful, event-driven orchestration runtime using LangGraph and LangChain to compile natural language requirements into fully functional boilerplate codebases. Engineered a deterministic routing graph utilizing Pydantic for structured outputs, managing dynamic state transitions between a sequence of execution agents—Planner, Architect, and Coder—equipped with custom file-system tool-calling layers to autonomously decompose tasks and compile multi-file application architectures.",
+          "links": [
+            { "label": "Code", "url": "https://github.com/Cshraddha153/Autonomous-Web-Application-Generator-AI-AGENT-Using-LangGraph" }
+          ]
+        },
+        {
+          "title": "Generative AI-Powered Medical Chatbot via RAG Pipeline",
+          "description": "Architected and developed a full-scale, context-aware conversational agent leveraging LangChain, Streamlit, and a FAISS vector database to execute semantic search over medical documentation. Built an optimized data ingestion pipeline featuring automated PDF extraction, precise text chunking, and Hugging Face sentence embeddings, routing contextual data to Meta Llama models via Groq API for low-latency, hallucination-free inferences.",
+          "links": [
+            { "label": "Code", "url": "https://github.com/Cshraddha153/Generative-AI-based-Medical-Chatbot-using-RAG" }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Research Work",
+      "items": [
+        {
+          "title": "Multimodal Transformer Framework for Misogyny Meme Detection (NAACL DravidianLangTech 2025)",
+          "description": "Developed a multimodal deep learning architecture to classify harmful social media content by combining text features extracted via pretrained XLM-RoBERTa with image features from a Vision Transformer. Processed these fused modalities through a unified model to accurately categorize misogynistic memes, achieving strong F1-scores of 0.77 for the Tamil dataset and 0.88 for the Malayalam dataset.",
+          "links": [
+            { "label": "Paper", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8igInQ4AAAAJ&citation_for_view=8igInQ4AAAAJ:u-x6o8ySG0sC" }
+          ]
+        },
+        {
+          "title": "ViT4Waste: Vision Transformer-Based E-Waste Classification System (IEEE EAIC 2025)",
+          "description": "Architected an automated electronic waste sorting system utilizing a Vision Transformer (ViT) architecture to classify e-waste with 99.99% accuracy, precision, and recall. Developed the high-throughput computer vision pipeline to optimize image feature extraction, directly reducing industrial sorting latency and enabling sustainable, automated recycling workflows.",
+          "links": [
+            { "label": "Paper", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8igInQ4AAAAJ&citation_for_view=8igInQ4AAAAJ:9yKSN-GCB0IC" }
+          ]
+        },
+        {
+          "title": "Transformer-Based Multilingual Sarcasm Detection Framework (ACM FIRE 2024)",
+          "description": "Developed a multilingual natural language processing (NLP) framework utilizing contextual transformer representations to classify sarcasm in social media posts. Engineered the text processing pipeline to accurately identify highly nuanced and code-mixed content, enabling high-precision sentiment analysis across diverse linguistic datasets.",
+          "links": [
+            { "label": "Paper", "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8igInQ4AAAAJ&citation_for_view=8igInQ4AAAAJ:2osOgNQ5qMEC" }
+          ]
+        }
+      ]
+    }
+  ]
+}

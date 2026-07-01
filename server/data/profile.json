@@ -158,9 +158,13 @@
       "category": "Software Engineering Projects",
       "items": [
         {
-          "title": "Chat Application using MERN Stack",
-          "description": "Architected a scalable, production-ready real-time chat platform using TypeScript and the MERN stack decoupled into high-availability microservices. Implemented an asynchronous message broker layer using RabbitMQ to handle inter-service communications alongside Socket.io for low-latency, real-time message broadcasting. Engineered high-efficiency performance optimizations by integrating Redis caching layers, implemented an automated OTP-based authentication workflow, and containerized the entire ecosystem with Docker for seamless deployment across AWS infrastructure.",
-          "links": []
+          "title": "Real Time Interactive Chat Application",
+          "description": "Architected and deployed a production-ready real-time chat platform using the MERN stack and TypeScript with a microservices architecture comprising User, Chat, and Mail services. Built asynchronous inter-service communication using RabbitMQ and enabled low-latency real-time messaging with Socket.io. Implemented Redis caching and OTP-based authentication to improve performance and security. Containerized services with Docker and deployed them on AWS EC2 using PM2, with MongoDB, Redis, and RabbitMQ supporting scalable backend operations. Configured Nginx as a reverse proxy with HTTPS (Let's Encrypt SSL) for secure API routing and WebSocket support, while deploying the frontend on Vercel with GitHub-based CI/CD, resulting in a cloud-native, secure, and highly available deployment workflow.",
+          "links": [
+            { "label": "Website", "url": "https://real-time-chat-applicationbyshraddh.vercel.app/login" },
+            { "label": "Code", "url": "https://github.com/Cshraddha153/Real-Time-Chat-Application-using-MERN-STACK" }
+  
+          ]
         },
         {
           "title": "Full Stack Hotel Booking Web Application",
